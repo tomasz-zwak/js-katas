@@ -6,4 +6,7 @@ describe("Hotel Room ", function () {
     expect(hotelRoom(undefined));
     expect(hotelRoom(""));
   });
+  it("returns correct solution: 70", function () {
+    expect(hotelRoom()).toEqual(70);
+  });
 });

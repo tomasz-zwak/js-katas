@@ -1,4 +1,10 @@
-function stringRotation(a, b) {return (a + a).indexOf(b) > -1}
+function stringRotation(a, b) {
+  [a, b] = toString(a, b);
+  return a.length === b.length && (a + a).indexOf(b) > -1;
+}
 
-module.exports = stringRotation
+function toString() {
+  return [...arguments].map((arg) => arg.toString());
+}
 
+module.exports = stringRotation;
