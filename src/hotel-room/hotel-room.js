@@ -26,7 +26,7 @@ function subSets(array) {
 }
 
 function hotelRoom(roomsNumber = 200) {
-  let roomNo = 100;
+  let roomNo = 0;
   while (roomNo <= roomsNumber) {
     const divisorArray = divisors(roomNo);
     const divisorSum = sumArrayNumbers(divisorArray);
@@ -39,7 +39,5 @@ function hotelRoom(roomsNumber = 200) {
     roomNo += 1;
   }
 }
-
-hotelRoom();
 
 module.exports = hotelRoom;

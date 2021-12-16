@@ -24,15 +24,4 @@ class Debounce {
   }
 }
 
-const debounce = new Debounce();
-
-const f1 = debounce.add(100, () => {
-  return "hello"
-});
-
-console.log(f1());
-setTimeout(() => {
-  console.log(f1());
-}, 120);
-
 module.exports = Debounce;
