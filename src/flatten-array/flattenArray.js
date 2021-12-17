@@ -1,6 +1,6 @@
 function flattenArray(array, flatArray = [], index = 0) {
   if (index >= array.length) return;
-  if (array[index].length === undefined) {
+  if (!Array.isArray(array[index])) {
     flatArray.push(array[index]);
   } else {
       flattenArray(array[index], flatArray, 0)
