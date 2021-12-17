@@ -1,7 +1,7 @@
 function splitString(input, delimiter) {
   if (!input || !delimiter) return null;
-  input = String(input);
-  delimiter = String(delimiter);
+  input = input.toString();
+  delimiter = delimiter.toString();
   const delimitedArray = [];
   let singlePartArray = [];
   for (let index = 0; index < input.length; index++) {
